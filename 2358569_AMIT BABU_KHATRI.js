@@ -1,4 +1,5 @@
 var button = document.querySelector('.button')
+// value taken to search the city name
 var CityName1 = document.querySelector('.CityName')
 
 button.addEventListener('click', function () {
@@ -28,7 +29,7 @@ button.addEventListener('click', function () {
          var display= `
         
          <h2 > City Name = ${data.name},${data.sys.country} </h2>
-         <p >Main Weather Condition = ${data.weather[0].description}<p>
+         <p > Weather Condition = ${data.weather[0].description}<p>
          <p > Temperature = ${celcius} °C</p>
          <p> Pressure = ${data.main.pressure} hpa</p>
          <p> Humidity = ${data.main.humidity}%</p>
@@ -72,7 +73,7 @@ var display= `
 
 
 <h2 > City Name = ${data.name},${data.sys.country} </h2>
-<h4 >Main Weather Condition = ${data.weather[0].description}</h4>
+<h4 > Weather Condition = ${data.weather[0].description}</h4>
 <p > Temperature = ${celcius}°C</p>
 <p> Pressure = ${data.main.pressure} hpa</p>
 <p> Humidity = ${data.main.humidity}%</p>
